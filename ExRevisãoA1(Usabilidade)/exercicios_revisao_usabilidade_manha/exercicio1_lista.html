@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        #meunome {
+            background-color: orange;
+        }
+
+        button {
+            width: 100%;
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <fieldset>
+            <legend>Cadastro Empresa</legend>
+            Nome: <input type="text" id="meunome"> <br><br>
+            Data de nascimento: <input type="date"><br><br>
+            E-mail: <input type="email"> <br><br>
+            Qual é seu cargo?<br><br>
+            <input type="radio" name="cargo"> Gerente
+            <input type="radio" name="cargo"> Analista
+            <input type="radio" name="cargo"> Estagiário
+
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<html>

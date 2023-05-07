@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="helloWorld">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="angular.js"></script>
+    <script>
+        // Criação do app
+        var app = angular.module("helloWorld", []);
+
+        // Criação do controller
+        app.controller("HelloController", function($scope) {
+            $scope.boasvindas = "Hello, World!";
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="HelloController">
+        <input ng-model='boasvindas'>
+        <h1>{{boasvindas}}</h1>
+    </div>
+</body>
+</html>

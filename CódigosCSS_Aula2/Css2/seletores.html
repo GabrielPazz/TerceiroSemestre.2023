@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Seletores</title>
+
+    <style type="text/css">
+        #nav li {
+            display: inline;
+        }
+
+        #nav a {
+            font-weight: bold;
+        }
+
+        div > strong {
+            color: #f00;
+        }
+
+        #conteudo h1~p {
+            margin-top: 5px;
+            background-color: slategrey;
+            width: 300px;
+            height: 30px;
+            margin-left: 40px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Seletores Descendentes</h1>
+    <ul id="nav">
+        <li>
+            <a href="#"> Link 1  </a>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="#"> Link 2 </a></li>
+        <li><a href="#"> Link 3 </a></li>
+    </ul>
+    <hr>
+
+    <h1> Seletores Filhos </h1>
+    <div>
+        <strong>Primeiro elemento</strong>
+        <p>
+            <strong>Segundo Elemento</strong>
+        </p>
+    </div>
+    <hr>
+
+    <h1>Seletores Irmãos</h1>
+
+    <div id="conteudo" role="main">
+        <h1>Meu conteúdo</h1>
+        <p>parágrafo 1</p>
+        <p>parágrafo 2</p>
+        <p>parágrafo 3</p>
+    </div>
+</body>
+</html>

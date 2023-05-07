@@ -1,0 +1,40 @@
+#menuhorizontal ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#menuhorizontal ul li {
+    display: inline;
+}
+
+#menuhorizontal ul li a {
+    display: inline-block;
+    padding: 2px 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}
+
+body {
+    background-color: black;
+}
+
+#menuhorizontal ul li a:hover {
+    color:#6d6d6d;
+    border-bottom: 3px solid slateblue;
+}
+
+@media only screen and (min-width: 700px) {
+    #menuhorizontal ul li {
+        display: block; /* contrário do inline*/
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 20%;
+    }
+
+    #menuhorizontal ul li a {
+        /* sem borda embaixo */
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,16 @@
+/* Resposta da a) */
+#telapreta {
+    background-color: black;
+}
+
+/* Resposta da b */
+
+.menu li:hover {
+    color: white;
+    background-color: black;
+}
+/* Resposta da c */
+#principal ~ .menu {
+    padding: 2px;
+    color: blue;
+}

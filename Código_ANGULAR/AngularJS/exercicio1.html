@@ -1,0 +1,25 @@
+<html ng-app="data">
+<head>
+    <script src="angular.js"></script>
+    <script>
+        // Criação do app
+        var app = angular.module("data", []);
+        // Criação do controller
+        app.controller("DataController", function ($scope) {
+            let dataHoje = new Date();
+            $scope.nome = "Gustavo";
+            $scope.horas =  dataHoje.getHours();
+            $scope.minutos =  dataHoje.getMinutes();
+            $scope.segundos = dataHoje.getSeconds();
+        });
+    </script>
+</head>
+<body>
+
+    <div ng-controller="DataController">
+        <h1>Olá {{nome}}</h1>
+        <p>Agora são {{horas}}:{{minutos}}:{{segundos}}</p>
+    </div>
+
+</body>
+</html>
